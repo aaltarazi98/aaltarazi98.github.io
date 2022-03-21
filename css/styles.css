@@ -7484,16 +7484,16 @@ background-image: linear-gradient(
 .bg-4{
   background-image: linear-gradient(
     180deg,
-    hsl(210deg 11% 15%) 0%,
-    hsl(209deg 12% 16%) 9%,
-    hsl(208deg 13% 17%) 18%,
-    hsl(206deg 14% 18%) 27%,
-    hsl(205deg 15% 20%) 36%,
-    hsl(204deg 15% 21%) 46%,
-    hsl(203deg 16% 22%) 58%,
-    hsl(202deg 17% 24%) 71%,
-    hsl(201deg 17% 25%) 85%,
-    hsl(200deg 18% 26%) 100%
+    hsl(240deg 37% 26%) 0%,
+    hsl(239deg 40% 24%) 11%,
+    hsl(239deg 43% 22%) 22%,
+    hsl(238deg 47% 21%) 33%,
+    hsl(237deg 51% 19%) 44%,
+    hsl(235deg 57% 17%) 56%,
+    hsl(234deg 64% 16%) 67%,
+    hsl(232deg 74% 14%) 78%,
+    hsl(234deg 82% 12%) 89%,
+    hsl(240deg 86% 11%) 100%
   );
 }
 
