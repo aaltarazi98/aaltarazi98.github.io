@@ -4,7 +4,9 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   output: "export",
-  assetPrefix: "./",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
