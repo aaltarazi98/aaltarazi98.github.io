@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "NomadMD Marketplace",
-    image: "/nomad.svg",
+    image: "/nomad-cart.svg",
     tags: ["Next.js", "GraphQL", "Node.js", "PostgreSQL", "AWS"],
     link: "https://demo.nomadmd.app/",
     description:
@@ -36,25 +36,6 @@ const projects = [
   },
 ];
 
-const tagColors: Record<string, string> = {
-  SaaS: "bg-green-200 text-green-800 border border-green-800",
-  "Dashboard Design": "bg-gray-200 text-gray-800 border border-gray-800",
-  "Framer Website": "bg-black bg-opacity-50 text-white border border-white",
-  Travel: "bg-yellow-200 text-yellow-800 border border-yellow-800",
-  "Web Design": "bg-gray-200 text-gray-800 border border-gray-800",
-  Healthcare: "bg-blue-200 text-blue-800 border border-blue-800",
-  "Mobile App": "bg-blue-200 text-blue-800 border border-blue-800",
-  "Next.js": "bg-white text-gray-800 border border-gray-800",
-  "Material UI": "bg-blue-200 text-blue-800 border border-blue-800",
-  GraphQL: "bg-red-200 text-red-800 border border-red-800",
-  PostgreSQL: "bg-blue-200 text-blue-800 border border-blue-800",
-  AWS: "bg-orange-100 text-orange-800 border border-orange-800",
-  "Node.js": "bg-green-200 text-green-800 border border-green-800",
-  MongoDB: "bg-white text-green-700 border border-green-700",
-  React: "bg-blue-950 text-blue-100 border border-blue-100",
-  Wordpress: "bg-gray-200 text-gray-800 border border-gray-800",
-};
-
 const Work: React.FC = () => (
   <section
     id="work"
@@ -67,7 +48,7 @@ const Work: React.FC = () => (
       </button> */}
     </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full place-items-center md:place-items-stretch">
-      {projects.map((project, idx) => (
+      {projects.map((project) => (
         <a
           href={project.link}
           key={project.title}

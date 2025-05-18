@@ -26,12 +26,24 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="w-full min-h-[80vh] flex flex-col items-center bg-white"
+      className="max-w-6xl mx-auto min-h-[80vh] flex flex-col items-center bg-white"
     >
+      {/* Headline and Description */}
+      <div className="w-full max-w-6xl px-4 flex flex-col md:flex-row justify-between my-20">
+        <div className="text-gray-500 text-xl mb-5 w-1/3">About me</div>
+        <h2 className="text-3xl md:text-4xl w-full md:w-2/3 font-semibold text-gray-500 leading-tight mb-4">
+          I build scalable architectures that optimize performance and deliver
+          exceptional user experiences.{" "}
+          <span className="text-black">
+            Transforming complex requirements into elegant, maintainable code is
+            my specialty.
+          </span>
+        </h2>
+      </div>
       {/* Top Cards */}
-      <div className="flex flex-col md:flex-row gap-8 mt-20 mb-16">
+      <div className="flex flex-row flex-wrap gap-8 mt-20 mb-16 w-full justify-center">
         {/* Award Card */}
-        <div className="bg-gray-100 rounded-3xl p-8 w-[350px] shadow-md flex flex-col items-start">
+        <div className="bg-gray-100 min-h-[350px] rounded-3xl p-8 w-[350px] shadow-md flex flex-col items-start">
           <div className="text-2xl font-bold flex items-center justify-center gap-2">
             <span>500+</span>
             <StarIcon className="text-yellow-500 text-sm size-6 mb-1" />
@@ -59,7 +71,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Testimonial Card */}
-        <div className="bg-black text-white rounded-3xl p-8 w-[350px] shadow-lg flex flex-col justify-between">
+        <div className="bg-black text-white rounded-3xl min-h-[350px] p-8 w-[350px] shadow-lg flex flex-col justify-between">
           <div>
             <div className="text-gray-400 text-2xl mb-4">{"</>"}</div>
             <p className="text-lg font-medium">
@@ -71,7 +83,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Projects Card */}
-        <div className="bg-gray-100 rounded-3xl flex flex-col gap-4 items-center justify-center w-[350px] shadow-md relative p-8">
+        <div className="bg-gray-100 rounded-3xl min-h-[350px] flex flex-col gap-4 items-center justify-center w-[350px] shadow-md relative p-8">
           {metrics.map((metric, index) => (
             <div
               key={index}
@@ -84,18 +96,6 @@ const About: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Headline and Description */}
-      <div className="w-full max-w-6xl px-4 flex flex-col md:flex-row justify-between my-20">
-        <div className="text-gray-500 text-xl mb-2 w-1/2">About me</div>
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-500 leading-tight mb-4">
-          Design solutions that elevate brands and create seamless user
-          experiences.{" "}
-          <span className="text-black">
-            I help bring ideas to life with strategy and creativity
-          </span>
-        </h2>
       </div>
     </section>
   );

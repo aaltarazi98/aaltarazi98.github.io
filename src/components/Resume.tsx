@@ -63,7 +63,7 @@ const Resume: React.FC = () => {
           mixBlendMode: "overlay",
         }}
       />
-      <div className="relative z-10 flex flex-col md:flex-row w-full max-w-7xl mx-auto">
+      <div className="relative z-10 flex flex-col md:flex-row w-full max-w-6xl mx-auto">
         {/* Left: Small Section Title */}
         <div className="md:w-1/3 mb-8 md:mb-0 flex items-start">
           <h3 className="text-lg text-gray-400 font-medium md:mt-2">Resume</h3>
@@ -83,7 +83,10 @@ const Resume: React.FC = () => {
           {/* Steps Grid */}
           <div className="flex flex-col gap-4">
             {steps.map((step, idx) => (
-              <div key={idx} className="w-100 sm:self-start sm:even:self-end">
+              <div
+                key={idx}
+                className="w-full sm:w-100 sm:self-start sm:even:self-end"
+              >
                 <div className={`flex flex-col items-start gap-6`}>
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#202020] flex items-center justify-center text-2xl text-[#6b7075]">
                     {idx + 1}
