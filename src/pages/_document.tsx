@@ -15,6 +15,7 @@ export default function Document() {
         />
         <meta name="author" content="Abdel Altarazi" />
         <meta property="og:title" content="Abdel Altarazi - SoftwareEngineer" />
+        <meta property="og:image" content="/headshot.png" />
         <meta
           property="og:description"
           content="Portfolio showcasing my work as a fullstack engineer specializing in scalable web applications"
