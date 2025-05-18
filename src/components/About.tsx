@@ -66,7 +66,7 @@ const About: React.FC = () => {
               alt="GitHub"
               className="rounded-xl mt-4 w-40 h-40 mx-auto group-hover:scale-110 transition-all duration-300"
             />
-            <ArrowUpRightIcon className="text-white bg-gray-500 opacity-0 group-hover:opacity-70 h-8 w-8 rounded-md p-1 text-sm size-6 mb-1 transition-all duration-300 absolute top-0 right-0" />
+            <ArrowUpRightIcon className="text-white bg-gray-500 opacity-70  md:opacity-0 group-hover:opacity-70 h-8 w-8 rounded-md p-1 text-sm size-6 mb-1 transition-all duration-300 absolute top-0 right-0" />
           </a>
         </div>
 
